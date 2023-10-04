@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/AboutMe/about.css">
+    <link rel="stylesheet" href="/menu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Tektur:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Croissant+One&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio Website</title>
+</head>
+
+
+
+<body>
+    <main>
+        <div class="backdrop"></div>
+
+        <%- include('../includes/main-header.ejs', {path: path}) %>
+        <%- include('../includes/mobile-nav.ejs') %>
+        
+
+        <section class="main-body" id="main-body">
+            <section class="mb-hero-section">
+                <div class="mb-hero-details">
+                    <div class="mb-hero-head">
+                        <h1 class="mb-hero-header">about.</h1>
+                        <span class="mb-hero-header2">I'm a full stack developer and a designer from West Bengal, India.</span>
+                        <span class="mb-hero-description">Myself Aritya, a <strong>Computer Science Engineering</strong> student graduating this year. I'm passionate about <strong>Software Engineering</strong>, driven by creativity, and excited to bring innovative tech solutions to life. I've always enjoyed solving complex problems.</span>
+                    </div>
+                    
+                    
+                    <div class="mb-hero-imgcontainer">
+                        <img class="heroimg" src="images/Aritya_Vector_2.png"/>
+                        <div class="divider"></div>
+                    </div>           
+                </div>
+
+            </section>
+
+            <section class="mb-skills-section">
+                <div class="mb-projects_head custom-divider">
+                    <div class="mb-projects_divider"></div>
+                    <h2 class="mb-projects_title">My Skills</h2>
+                    <div class="mb-projects_divider"></div>
+                </div>
+                <div class="mb-skills">
+                    <div class="mb-skills-container">
+                        <span class="mb-skills-header">As a designer</span>
+                        <span class="design-skill">Responsive Websites</span>
+                        <span class="design-skill">Figma</span>
+                        <span class="design-skill">Video Editing</span>
+                        <span class="design-skill">UI/UX Design</span>
+                        <span class="design-skill">Little Bit Photoshop😉</span>
+                    </div>
+    
+                    <div class="mb-skills-container">
+                        <span class="mb-skills-header">As a developer</span>
+                        <span class="design-skill">HTML/CSS</span>
+                        <span class="design-skill">JavaScript</span>
+                        <span class="design-skill">React.Js</span>
+                        <span class="design-skill">Node.Js</span>
+                        <span class="design-skill">Angular</span>
+                        <span class="design-skill">Mongo-DB</span>
+                        <span class="design-skill">SQL</span>
+                        <span class="design-skill">C++</span>
+                        <span class="design-skill">Python</span>
+                        <span class="design-skill">C</span>
+                        <span class="design-skill">Git-GitHub</span>
+                        <span class="design-skill">Data Science</span>
+                    </div>
+                </div>
+                
+
+                <div class="mb-skills-tech">
+
+                </div>
+            </section>
+
+
+            <section class="mb-randoms">
+                <div class="mb-random-header">Random Facts</div>
+
+                <span class="random-fact">Love to play games</span>
+                <span class="design-skill">Loves to learn new tech</span>
+                <span class="random-fact">Cooking(Eating too...)</span>
+                <span class="random-fact">Loves to play & watch football</span>
+            </section>
+
+            <section class="socials-section">
+                <span class="social-head">I'm open to <strong>Job</strong> Opportunities where I can contribute, learn and grow. If you have a opportunity that matches my skills and experience then <strong>contact</strong> me.</span>
+                <button href="../Contact/contact.html" class="social-btn">Contact</button>
+            </section>
+
+
+        </section>
+
+
+
+
+        <section class="footer">
+            <a class="arrow-container" href="#main-body"><div class="semi-circle"><span class="arrow">▷</span></div></a>
+            <div class="footer-container">
+                <div class="footer-container-head">
+                    <span><a>@2023 Aritya Khamrui</a></span>
+                </div>
+                <div class="footer-container-list">
+                    <ul class="footer-container-list_items">
+                        <li class="footer-container-list_item"><a href="/contact">Contact</a></li>
+                        <li class="footer-container-list_item"><a href="/about">About Me</a></li>
+                        <li class="footer-container-list_item"><a href="/projects">Projects</a></li>
+                        <li class="footer-container-list_item"><a href="/experience">Experience</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="main.js"></script>
+
+</body>
+</html>

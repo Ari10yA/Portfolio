@@ -1,0 +1,18 @@
+<section class="mobile-nav">
+    <div class="mobile-nav_list">
+        <ul class="mobile-nav-header_items">
+            <li class="<%= path === '/contact' ? 'current-item mobile-nav-header_item' : 'mobile-nav-header_item' %>">
+                <a <%= path==='/contact' ? 'class=current' : '' %> href="/contact">Contact</a>
+            </li>
+            <li class="mobile-nav-header_item">
+                <a <%= path==='/about' ? 'class=current' : '' %> href="/about">About Me</a>
+            </li>
+            <li class="mobile-nav-header_item">
+                <a <%= path==='/projects' ? 'class=current' : '' %> href="/projects">Projects</a>
+            </li>
+            <li class="mobile-nav-header_item">
+                <a <%= path==='/experience' ? 'class=current' : '' %> href="/experience">Experience</a>
+            </li>
+        </ul>
+    </div>
+</section>

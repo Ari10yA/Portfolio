@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./menu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Tektur:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Portfolio Website</title>
+</head>
+
+
+
+<body>
+    <main>
+        <div class="backdrop"></div>
+
+        <%- include('./includes/main-header.ejs', {path: path}) %>
+        <%- include('./includes/mobile-nav.ejs') %>
+
+        <section class="main-body" id="main-body">
+            <section class="main-body-image">
+                <div class="leftpart">
+                    <span>designer</span>
+                    <p class="leftpart_title">Loves To Design UI</p>
+                </div>
+
+                <div class="rightpart">
+                    <span>&lt;coder&gt;</span>
+                    <p class="rightpart_title">A Full-Stack Developer</p>
+                </div>
+                <div class="main-body-image__container">
+                    <img src="./images/Aritya_Vector_2.png">
+                </div>
+            </section>
+
+            <section class="main-body-projects">
+
+                <div class="mb-projects_head">
+                    <div class="mb-projects_divider"></div>
+                    <h2 class="mb-projects_title">Some Projects</h2>
+                    <div class="mb-projects_divider"></div>
+                </div>
+
+                <div class="mb-projects_container">
+                    <a href="https://o-shop-5kmm.onrender.com" target="_blank" style="text-decoration: none;">
+                    <div class="mb-projects-card">
+                        <div class="mb-projects-card_imgcontainer">
+                            <img class="imgcontainer-img" src="./images/O-Shop.png"/>
+                        </div>
+                        <div class="mb-projects-card_details">
+                            <div class="mb-projects-card_title">
+                                Multi-Seller E-Commerce Website
+                            </div>
+                            <div class="mb-projects-card_description">
+                                Node.Js Application
+                            </div>
+                            <div class="mb-projects-card_description2">
+                                Show Project
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                
+
+                    <a href="https://react-movie-671x.onrender.com" target="_blank" style="text-decoration: none;">
+                    <div class="mb-projects-card">
+                        <div class="mb-projects-card_imgcontainer">
+                            <img class="imgcontainer-img" src="./images/Movie-Nation.png"/>
+                        </div>
+                        <div class="mb-projects-card_details">
+                            <div class="mb-projects-card_title">
+                                Movie-Nation(Movies/Tv-Series)
+                            </div>
+                            <div class="mb-projects-card_description">
+                                React.Js Application
+                            </div>
+                            <div class="mb-projects-card_description2">
+                                Show Project
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                
+
+                    <a href="https://b-log-8ph6.onrender.com" target="_blank" style="text-decoration: none;">
+                    <div class="mb-projects-card">
+                        <div class="mb-projects-card_imgcontainer">
+                            <img class="imgcontainer-img" src="./images/Blog-App.png"/>
+                        </div>
+                        <div class="mb-projects-card_details">
+                            <div class="mb-projects-card_title">
+                                Blog Website
+                            </div>
+                            <div class="mb-projects-card_description">
+                                Node.Js Application
+                            </div>
+                            <div class="mb-projects-card_description2">
+                                Show Project
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+
+                </div>
+
+                
+            </section>
+
+        </section>
+
+
+
+
+        <section class="footer">
+            <a class="arrow-container" href="#main-body"><div class="semi-circle"><span class="arrow">▷</span></div></a>
+            <div class="footer-container">
+                <div class="footer-container-head">
+                    <span><a>@2023 Aritya Khamrui</a></span>
+                </div>
+                <div class="footer-container-list">
+                    <ul class="footer-container-list_items">
+                        <li class="footer-container-list_item"><a href="/contact">Contact</a></li>
+                        <li class="footer-container-list_item"><a href="/about">About Me</a></li>
+                        <li class="footer-container-list_item"><a href="/projects">Projects</a></li>
+                        <li class="footer-container-list_item"><a href="/experience">Experience</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
