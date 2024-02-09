@@ -1,108 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="/Contact/contact.css">
-    <link rel="stylesheet" href="/Experience/experience.css">
-    <link rel="stylesheet" href="../menu.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Tektur:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Croissant+One&family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/Contact/contact.css" />
+    <link rel="stylesheet" href="/Experience/experience.css" />
+    <link rel="stylesheet" href="../menu.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Tektur:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Croissant+One&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Portfolio Website</title>
-</head>
+  </head>
 
-
-
-<body>
+  <body>
     <main>
-        <div class="backdrop"></div>
+      <div class="backdrop"></div>
 
-        <%- include('../includes/main-header.ejs', {path: path}) %>
-        <%- include('../includes/mobile-nav.ejs') %>
+      <%- include('../includes/main-header.ejs', {path: path}) %> <%-
+      include('../includes/mobile-nav.ejs') %>
 
-        <section class="main-body" id="main-body">
-            <section class="mb-hero-section">
-                <div class="mb-hero-details">
-                    <div class="mb-hero-head">
-                        <h1 class="mb-hero-header">experience.</h1>
-                        <span class="mb-hero-header2">Here are some of the places I professionally worked with </span>
-                    </div>
-                    <div class="social-links">
-                        <div>
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-linkedin"></a>
-                        </div>
-                        <div>
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-github"></a>
-                        </div>
-                    </div>      
-                </div>
-
-            </section>
-
-
-            <section class="mb-exp-section">
-                <div class="exp-card">
-                    <div class="exp-card_upper">
-                        <div class="upper_container">
-                            <div class="company_details">
-                                <div class="company_logo">
-                                    <div class="logo"></div>
-                                </div>
-                                <div class="company_name">
-                                    Paramount Calcium
-                                </div>
-                            </div>
-                            <div class="time-stamp">
-                                2022(Dec)-2023(Jun)
-                            </div>
-                        </div>
-                        
-                        <div class="arrow-drop arrow-drop_toggle">
-                            🔽
-                        </div>
-                    </div>
-                    <div class="exp-card_lower exp-card_lower_show">
-                        <div class="company_role">Web Developer Intern</div>
-                        <div class="role_description">Worked with <strong>Nodejs, Javascript, HTML, CSS</strong>  tech stack. Contributed in the <strong>Inventory Management System</strong>.</div>
-                    </div>
-                </div>
-
-            </section>
-
-        </section>
-
-
-
-
-        <section class="footer">
-            <a class="arrow-container" href="#main-body"><div class="semi-circle"><span class="arrow">▷</span></div></a>
-            <div class="footer-container">
-                <div class="footer-container-head">
-                    <span><a>@2023 Aritya Khamrui</a></span>
-                </div>
-                <div class="footer-container-list">
-                    <ul class="footer-container-list_items">
-                        <li class="footer-container-list_item"><a href="/contact">Contact</a></li>
-                        <li class="footer-container-list_item"><a href="/about">About Me</a></li>
-                        <li class="footer-container-list_item"><a href="/projects">Projects</a></li>
-                        <li class="footer-container-list_item"><a href="/experience">Experience</a></li>
-                    </ul>
-                </div>
-
+      <section class="main-body" id="main-body">
+        <section class="mb-hero-section">
+          <div class="mb-hero-details">
+            <div class="mb-hero-head">
+              <h1 class="mb-hero-header">experience.</h1>
+              <span class="mb-hero-header2"
+                >Here are some of the places I professionally worked with
+              </span>
             </div>
+            <div class="social-links">
+              <div>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+              </div>
+              <div>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-github"></a>
+              </div>
+            </div>
+          </div>
         </section>
+
+        <section class="mb-exp-section">
+          <div class="exp-card">
+            <div class="exp-card_upper">
+              <div class="upper_container">
+                <div class="company_details">
+                  <div class="company_logo">
+                    <div class="logo"></div>
+                  </div>
+                  <div class="company_name">Paramount Calcium</div>
+                </div>
+                <div class="time-stamp">2022(Dec)-2023(Jun)</div>
+              </div>
+
+              <div class="arrow-drop arrow-drop_toggle">🔽</div>
+            </div>
+            <div class="exp-card_lower exp-card_lower_show">
+              <div class="company_role">Web Developer Intern</div>
+              <div class="role_description">
+                Developed and maintained Node.Js backend applications
+                integrating with React. Worked with RESTful APIs for
+                microservices architecture.
+              </div>
+            </div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-card_upper">
+              <div class="upper_container">
+                <div class="company_details">
+                  <div class="company_logo">
+                    <div class="logo"></div>
+                  </div>
+                  <div class="company_name">Paramount Calcium</div>
+                </div>
+                <div class="time-stamp">2022(Jan)-2023(May)</div>
+              </div>
+
+              <div class="arrow-drop arrow-drop_toggle">🔽</div>
+            </div>
+            <div class="exp-card_lower exp-card_lower_show">
+              <div class="company_role">Web Developer Intern</div>
+              <div class="role_description">
+                Worked with Javascript, jQuery, Node.js. Designed and
+                implemented different web pages
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="footer">
+        <a class="arrow-container" href="#main-body"
+          ><div class="semi-circle"><span class="arrow">▷</span></div></a
+        >
+        <div class="footer-container">
+          <div class="footer-container-head">
+            <span><a>@2023 Aritya Khamrui</a></span>
+          </div>
+          <div class="footer-container-list">
+            <ul class="footer-container-list_items">
+              <li class="footer-container-list_item">
+                <a href="/contact">Contact</a>
+              </li>
+              <li class="footer-container-list_item">
+                <a href="/about">About Me</a>
+              </li>
+              <li class="footer-container-list_item">
+                <a href="/projects">Projects</a>
+              </li>
+              <li class="footer-container-list_item">
+                <a href="/experience">Experience</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-    
 
     <script src="../main.js"></script>
-
-</body>
+  </body>
 </html>
