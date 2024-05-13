@@ -444,7 +444,6 @@ const contactObserver = new IntersectionObserver(
 
 const expCardObserver = new IntersectionObserver(
   (entries) => {
-    console.log(entries);
     entries.forEach((entry) => {
       entry.target.classList.toggle("exp-card_show", entry.isIntersecting);
       if (entry.isIntersecting) {
@@ -453,6 +452,6 @@ const expCardObserver = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.3,
+    threshold: 0.0,
   }
 );
