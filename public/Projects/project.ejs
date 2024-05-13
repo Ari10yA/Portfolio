@@ -1,145 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="/Projects/project.css">
-    <link rel="stylesheet" href="/menu.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Tektur:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Croissant+One&family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/Projects/project.css" />
+    <link rel="stylesheet" href="/menu.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Tektur:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Croissant+One&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Portfolio Website</title>
-</head>
+  </head>
 
-
-
-<body>
+  <body>
     <main>
-        <div class="backdrop"></div>
+      <div class="backdrop"></div>
 
-        <%- include('../includes/main-header.ejs', {path: path}) %>
-        <%- include('../includes/mobile-nav.ejs', {path: path}) %>
+      <%- include('../includes/main-header.ejs', {path: path}) %> <%-
+      include('../includes/mobile-nav.ejs', {path: path}) %>
 
-        <section class="main-body" id="main-body">
-            <section class="mb-hero-section">
-                <div class="mb-hero-details">
-                    <div class="mb-hero-head">
-                        <h1 class="mb-hero-header">projects.</h1>
-                        <span class="mb-hero-header2">Here you will find some of the personal projects I created and for checking all projects check Github</span>
-                    </div>
-
-                    <div><a href="#" class="fa fa-github"></a></div>
-                </div>
-            </section>
-
-            <section class="mb-projects-section">
-                <div class="mb-projects-container">
-                    <div class="project-card">
-                        <div class="project-card-img">
-                            <img class="project-img" src="/screens/o-shop.png">
-                        </div>
-                        <div class="project-details">
-                            <div class="project-head">O-Shop</div>
-                            <div class="project-desc">This is a multiseller E-Commerce Website</div>
-                            <div class="project-link"><a href="https://o-shop-5kmm.onrender.com" target="_blank"><button class="project-btn">Live Link</button></a></div>
-
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-card-img">
-                            <img class="project-img" src="/screens/Movie-Nation.png">
-                        </div>
-                        <div class="project-details">
-                            <div class="project-head">Movie-Nation</div>
-                            <div class="project-desc">This is a website to look through different movies and web-series to see their details and trailer and also you can book tickets</div>
-                            <div class="project-link"><a href="https://react-movie-671x.onrender.com" target="_blank"><button class="project-btn">Live Link</button></a></div>
-
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-card-img">
-                            <img class="project-img" src="/screens/blog-website.png">
-                        </div>
-                        <div class="project-details">
-                            <div class="project-head">Blog-Website</div>
-                            <div class="project-desc">Web application for posting blogs</div>
-                            <div class="project-link"><a href="https://b-log-8ph6.onrender.com" target="_blank"><button class="project-btn">Live Link</button></a></div>
-
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-card-img">
-                            <img class="project-img" src="/screens/yt_downloader.png">
-                        </div>
-                        <div class="project-details">
-                            <div class="project-head">Youtube Downloader</div>
-                            <div class="project-desc">Web-Application to download youtube videos and to convert them into audio files</div>
-                            <div class="project-link"><a href="https://yt-downloader-co7a.onrender.com" target="_blank"><button class="project-btn">Live Link</button></a></div>
-
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-card-img">
-                            <img class="project-img" src="/screens/typing_game.png">
-                        </div>
-                        <div class="project-details">
-                            <div class="project-head">Typing Game</div>
-                            <div class="project-desc">You can get strong in typing speed</div>
-                            <div class="project-link"><a href="https://typing-game-umd2.onrender.com" target="_blank"><button class="project-btn">Live Link</button></a></div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="project-card">
-                        <div class="project-card-img">
-                            <img class="project-img" src="/screens/notes_app.png">
-                        </div>
-                        <div class="project-details">
-                            <div class="project-head">Notes App</div>
-                            <div class="project-desc">Web Application to save different notes and you can download the notes in the form of pdf</div>
-                            <div class="project-link"><a href="https://notes-app-7caw.onrender.com" target="_blank"><button class="project-btn">Live Link</button></a></div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </section>
-
-
-
-
-        <section class="footer">
-            <a class="arrow-container" href="#main-body"><div class="semi-circle"><span class="arrow">▷</span></div></a>
-            <div class="footer-container">
-                <div class="footer-container-head">
-                    <span><a>@2023 Aritya Khamrui</a></span>
-                </div>
-                <div class="footer-container-list">
-                    <ul class="footer-container-list_items">
-                        <li class="footer-container-list_item"><a href="/contact">Contact</a></li>
-                        <li class="footer-container-list_item"><a href="/about">About Me</a></li>
-                        <li class="footer-container-list_item"><a href="/projects">Projects</a></li>
-                        <li class="footer-container-list_item"><a href="/experience">Experience</a></li>
-                    </ul>
-                </div>
-
+      <section class="main-body" id="main-body">
+        <section class="mb-hero-section">
+          <div class="mb-hero-details">
+            <div class="mb-hero-head">
+              <h1 class="mb-hero-header">projects.</h1>
+              <span class="mb-hero-header2"
+                >Here you will find some of the personal projects I created and
+                for checking all projects check Github</span
+              >
             </div>
+
+            <div><a href="#" class="fa fa-github"></a></div>
+          </div>
         </section>
+
+        <section class="mb-projects-section">
+          <div class="mb-projects-container">
+            <div class="project-card">
+              <div class="project-card-img">
+                <img class="project-img" src="/screens/o-shop.png" />
+              </div>
+              <div class="project-details">
+                <div class="project-head">O-Shop</div>
+                <div class="project-desc">
+                  This is a multiseller E-Commerce Website
+                </div>
+                <div class="project-link">
+                  <a href="https://o-shop-5kmm.onrender.com" target="_blank"
+                    ><button class="project-btn">Live Link</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card-img">
+                <img class="project-img" src="/screens/Movie-Nation.png" />
+              </div>
+              <div class="project-details">
+                <div class="project-head">Movie-Nation</div>
+                <div class="project-desc">
+                  This is a website to look through different movies and
+                  web-series to see their details and trailer and also you can
+                  book tickets
+                </div>
+                <div class="project-link">
+                  <a
+                    href="https://react-movie-671x.onrender.com"
+                    target="_blank"
+                    ><button class="project-btn">Live Link</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card-img">
+                <img class="project-img" src="/screens/blog-website.png" />
+              </div>
+              <div class="project-details">
+                <div class="project-head">Blog-Website</div>
+                <div class="project-desc">
+                  Web application for posting blogs
+                </div>
+                <div class="project-link">
+                  <a href="https://b-log-8ph6.onrender.com" target="_blank"
+                    ><button class="project-btn">Live Link</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card-img">
+                <img class="project-img" src="/screens/yt_downloader.png" />
+              </div>
+              <div class="project-details">
+                <div class="project-head">Youtube Downloader</div>
+                <div class="project-desc">
+                  Web-Application to download youtube videos and to convert them
+                  into audio files
+                </div>
+                <div class="project-link">
+                  <a
+                    href="https://yt-downloader-co7a.onrender.com"
+                    target="_blank"
+                    ><button class="project-btn">Live Link</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card-img">
+                <img class="project-img" src="/screens/typing_game.png" />
+              </div>
+              <div class="project-details">
+                <div class="project-head">Typing Game</div>
+                <div class="project-desc">
+                  You can get strong in typing speed
+                </div>
+                <div class="project-link">
+                  <a
+                    href="https://typing-game-umd2.onrender.com"
+                    target="_blank"
+                    ><button class="project-btn">Live Link</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card-img">
+                <img class="project-img" src="/screens/notes_app.png" />
+              </div>
+              <div class="project-details">
+                <div class="project-head">Notes App</div>
+                <div class="project-desc">
+                  Web Application to save different notes and you can download
+                  the notes in the form of pdf
+                </div>
+                <div class="project-link">
+                  <a href="https://notes-app-7caw.onrender.com" target="_blank"
+                    ><button class="project-btn">Live Link</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="footer">
+        <a class="arrow-container" href="#main-body"
+          ><div class="semi-circle"><span class="arrow">▷</span></div></a
+        >
+        <div class="footer-container">
+          <div class="footer-container-head">
+            <span><a>@2024 Aritya Khamrui</a></span>
+          </div>
+          <div class="footer-container-list">
+            <ul class="footer-container-list_items">
+              <li class="footer-container-list_item">
+                <a href="/contact">Contact</a>
+              </li>
+              <li class="footer-container-list_item">
+                <a href="/about">About Me</a>
+              </li>
+              <li class="footer-container-list_item">
+                <a href="/projects">Projects</a>
+              </li>
+              <li class="footer-container-list_item">
+                <a href="/experience">Experience</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-    
 
     <script src="../main.js"></script>
-
-</body>
+  </body>
 </html>
