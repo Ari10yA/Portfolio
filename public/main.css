@@ -730,6 +730,7 @@ main {
 .semi-circle__arrow {
   display: inline-block;
   font-size: 1.6rem;
+  font-weight: bold;
   position: absolute;
   left: 50%;
   top: 50%;
