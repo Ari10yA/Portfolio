@@ -50,65 +50,78 @@
             </div>
             <div class="social-links">
               <div>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-              </div>
-              <div>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/aritya-khamrui-90b500190/" class="fa fa-linkedin"></a>
+                <a href="https://github.com/Ari10yA" class="fa fa-github"></a>
               </div>
             </div>
           </div>
         </section>
 
         <section class="mb-exp-section">
-          <div class="exp-card">
-            <div class="exp-card_upper">
-              <div class="upper_container">
-                <div class="company_details">
-                  <div class="company_logo">
-                    <div class="logo"></div>
-                  </div>
-                  <div class="company_name">
-                    <strong>Paramount Calcium</strong>
-                  </div>
-                </div>
-                <div class="time-stamp">2022(Dec)-2023(Jul)</div>
-              </div>
+          <% experiences.forEach(experience => { %>
 
-              <div class="arrow-drop arrow-drop_toggle">🔽</div>
-            </div>
-            <div class="exp-card_lower exp-card_lower_show">
-              <div class="company_role">Web Development Intern</div>
-              <div class="role_description">
-                Developed backend RESTful APIs using Node.js. Utilized Redis for
-                caching purposes within the backend. Contributed to front-end
-                development using React.js
-              </div>
-            </div>
-          </div>
-          <div class="exp-card">
-            <div class="exp-card_upper">
-              <div class="upper_container">
-                <div class="company_details">
-                  <div class="company_logo">
-                    <div class="logo1"></div>
-                  </div>
-                  <div class="company_name"><strong>Ericsson</strong></div>
-                </div>
-                <div class="time-stamp">2024(Feb) <strong>Ongoing</strong></div>
-              </div>
+  <div class="exp-card">
 
-              <div class="arrow-drop arrow-drop_toggle">🔽</div>
-            </div>
-            <div class="exp-card_lower exp-card_lower_show">
-              <div class="company_role">Associate Engineer Intern</div>
-              <div class="role_description">
-                Involved in Dynamic Activation. Working with technologies such
-                as Docker, Kubernetes, Cloud Computing, SQL, Linux
-              </div>
-            </div>
+    <div class="exp-card_upper">
+
+      <div class="upper_container">
+
+        <div class="company_details">
+
+          <div class="company_logo">
+            <img
+              class="company-logo-img"
+              src="<%= experience.logo %>"
+              alt="<%= experience.company %> logo"
+            />
           </div>
+
+          <div class="company_name">
+            <strong><%= experience.company %></strong>
+          </div>
+
+        </div>
+
+        <div class="time-stamp">
+          <%= experience.startDate %> -
+
+          <% if (experience.current) { %>
+            <strong>Present</strong>
+          <% } else { %>
+            <%= experience.endDate %>
+          <% } %>
+        </div>
+
+      </div>
+
+      <div class="arrow-drop arrow-drop_toggle">
+        🔽
+      </div>
+
+    </div>
+
+
+    <div class="exp-card_lower exp-card_lower_show">
+
+      <div class="company_role">
+        <%= experience.role %>
+      </div>
+
+      <div class="role_description">
+
+        <ul>
+          <% experience.description.forEach(item => { %>
+            <li><%= item %></li>
+          <% }) %>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<% }) %>
         </section>
       </section>
 

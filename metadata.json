@@ -1,0 +1,138 @@
+{
+    "HomePageProjects": [
+        {
+            "title": "Auto-Ship",
+            "description": "Hosting Platform",
+            "image": "./images/autoship.png",
+            "url": "https://github.com/Ari10yA/Mini-Vercel.git"
+        },
+        {
+            "title": "Building Blocks Game",
+            "description": "Powered by Threejs",
+            "image": "./images/bbgame.png",
+            "url": "https://ari10ya.github.io/Building-Block-Game.github.io/"
+        },
+        {
+            "title": "Dell Technologies Page",
+            "description": "Production Web Application",
+            "image": "./images/dellpage.png",
+            "url": "https://www.dell.com/en-us/shop/accessories"
+        }
+    ],
+    "ProjectsData": [
+        {
+            "title": "Auto-Ship",
+            "description": "A platform that lets users deploy React and Vite applications directly from GitHub, with automated builds and real-time deployment logs.",
+            "image": "/screens/autoship.png",
+            "url": "https://github.com/Ari10yA/Mini-Vercel.git"
+        },
+        {
+            "title": "Building Block Game",
+            "description": "Simple game developed with Three.Js inspired by the original game",
+            "image": "/screens/blockgame.png",
+            "url": "https://ari10ya.github.io/Building-Block-Game.github.io/"
+        },
+        {
+            "title": "Scalable Chat Application",
+            "description": "A real-time chat application with persistent messaging and session management, built for scalable communication.",
+            "image": "",
+            "url": "https://github.com/Ari10yA/Chat-App-Server"
+        },
+        {
+            "title": "O-Shop",
+            "description": "This is a multiseller E-Commerce Website with customer interface and differenct admin interface available for businesses. Built using the MEN stack (MongoDB, Express.js, Node.js) with EJS for server-side rendering ejs ",
+            "image": "/screens/o-shop.png",
+            "url": "https://o-shop-5kmm.onrender.com"
+        },
+        {
+            "title": "Movie-Nation",
+            "description": "This is a website to look through different movies and web-series to see their details and trailer and also you can book tickets.",
+            "image": "/screens/Movie-Nation.png",
+            "url": "https://react-movie-671x.onrender.com"
+        },
+        {
+            "title": "Youtube Downloader",
+            "description": "Web-Application to download youtube videos and and audio files with the help of yt video link",
+            "image": "/screens/yt_downloader.png",
+            "url": "https://yt-downloader-co7a.onrender.com"
+        },
+        {
+            "title": "Fun Typing Game",
+            "description": "You can get strong in typing speed",
+            "image": "/screens/typing_game.png",
+            "url": "https://typing-game-umd2.onrender.com"
+        }
+    ],
+    "Experiences": [
+        {
+            "company": "Align Techne (Dell Technologies)",
+            "logo": "/images/dell-technologies.jpg",
+            "role": "Frontend Developer",
+            "startDate": "Jun 2024",
+            "endDate": "Jul 2026",
+            "current": false,
+            "description": [
+                "Developed a Python-based YOLO object detection model to detect and locate PC products within production images.",
+                "Designed and developed a web-based admin tool for defining object coordinates and placing interactive hotspots over detected products in production images.",
+                "Developed and enhanced a Micro Frontend using ASP.NET, TypeScript, JavaScript, and SCSS, implementing a scalable multi-theme architecture for Dell and Alienware experiences while improving WCAG accessibility and contributing to a 20% increase in bundle sales.",
+                "Redesigned and developed a React-based rule configuration platform for managing hardware sales rules, simplifying complex configuration workflows for enterprise sales teams."
+            ]
+        },
+        {
+            "company": "Ericsson",
+            "logo": "/images/Ericsson_logo.jpeg",
+            "role": "Associate Engineer Intern",
+            "startDate": "Mar 2024",
+            "endDate": "Jun 2024",
+            "current": false,
+            "description": [
+                "Collaborated with the MTN Uganda team on dynamic service activation and provisioning, developing solutions to automate and streamline provisioning workflows.",
+                "Developed Shell scripts to automate multi-step provisioning workflows, eliminating repetitive manual command execution and reducing manual effort by 16%.",
+                "Containerized internal web portals and provisioning applications using Docker and Kubernetes, streamlining deployment and scalability."
+            ]
+        },
+        {
+            "company": "Paramount Calcium",
+            "logo": "/images/PC_logo.png",
+            "role": "Web Development Intern",
+            "startDate": "Dec 2022",
+            "endDate": "Jul 2023",
+            "current": false,
+            "description": [
+                "Designed and developed REST APIs using Node.js for product catalog and inventory management within a microservice-based architecture.",
+                "Implemented Redis caching for frequently accessed product data, improving backend performance and reducing redundant database queries.",
+                "Built reusable React.js components for product discovery, catalog management, and inventory-related workflows."
+            ]
+        }
+    ],
+    "Skill": [
+        {
+            "title": "Languages",
+            "skills": ["C++", "JavaScript", "TypeScript", "Python"]
+        },
+        {
+            "title": "Frontend",
+            "skills": ["React", "Next.js", "SCSS", "Figma"]
+        },
+        {
+            "title": "Backend",
+            "skills": [
+                "Node.js",
+                "Express",
+                "ASP.NET",
+                "REST APIs",
+                "Microservices",
+                "PostgreSQL",
+                "Cassandra",
+                "MongoDB",
+                "Redis",
+                "Message Queues",
+                "WebSockets"
+            ]
+        },
+        {
+            "title": "DevOps",
+            "skills": ["Docker", "Kubernetes", "AWS", "Git", "Linux"]
+        }
+    ]
+}

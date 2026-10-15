@@ -44,16 +44,12 @@
             <div class="mb-hero-head">
               <h1 class="mb-hero-header">about.</h1>
               <span class="mb-hero-header2"
-                >I'm a full stack developer and a designer from West Bengal,
+                >I'm a Software Engineer and a Designer from West Bengal,
                 India.</span
               >
               <span class="mb-hero-description"
-                >Myself Aritya, a
-                <strong>Computer Science Engineering</strong> student graduated
-                last year. I'm passionate about
-                <strong>Software Engineering</strong>, driven by creativity, and
-                excited to bring innovative tech solutions to life. I've always
-                enjoyed solving complex problems.</span
+                >Myself Aritya Khamrui, with 2+ years of experience specializing in <strong>JavaScript, C++</strong>. Proven track record in building <strong>scalable microservices</strong>,
+developing and optimizing <strong>web applications</strong>, and implementing containerized DevOps workflows.</span
               >
             </div>
 
@@ -71,39 +67,27 @@
             <div class="mb-projects_divider"></div>
           </div>
           <div class="mb-skills">
-            <div class="mb-skills-container">
-              <span class="mb-skills-header">As a designer</span>
-              <span class="design-skill">Responsive Websites</span>
-              <span class="design-skill">Figma</span>
-              <span class="design-skill">Video Editing</span>
-              <span class="design-skill">UI/UX Design</span>
-              <span class="design-skill">Little Bit Photoshop😉</span>
-            </div>
 
-            <div class="mb-skills-container">
-              <span class="mb-skills-header">As a developer</span>
-              <span class="design-skill">HTML/CSS</span>
-              <span class="design-skill">JavaScript</span>
-              <span class="design-skill">TypeScript</span>
-              <span class="design-skill">React.Js</span>
-              <span class="design-skill">Next.Js</span>
-              <span class="design-skill">Node.Js</span>
-              <span class="design-skill">Angular</span>
-              <span class="design-skill">Database</span>
-              <span class="design-skill">Docker</span>
-              <span class="design-skill">Kubernetes</span>
-              <span class="design-skill">Linux</span>
-              <span class="design-skill">AWS</span>
-              <span class="design-skill">Docker</span>
-              <span class="design-skill">C++</span>
-              <span class="design-skill">Python</span>
-              <span class="design-skill">C</span>
-              <span class="design-skill">Git-GitHub</span>
-              <span class="design-skill">Data Science</span>
-              <span class="design-skill"
-                >And some testing(Jest, Puppeteer)😉</span
-              >
-            </div>
+            <% skills.forEach(category => { %>
+
+              <div class="mb-skills-container">
+
+                <span class="mb-skills-header">
+                  <%= category.title %>
+                </span>
+
+                <% category.skills.forEach(skill => { %>
+
+                  <span class="design-skill">
+                    <%= skill %>
+                  </span>
+
+                <% }) %>
+
+              </div>
+
+            <% }) %>
+
           </div>
 
           <div class="mb-skills-tech"></div>

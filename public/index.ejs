@@ -23,6 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/a741320eb0.js" crossorigin="anonymous"></script>
     <title>Portfolio Website</title>
   </head>
 
@@ -53,14 +54,14 @@
             <img
               alt=""
               class="toned_image"
-              src="./images/Aritya_Vector_2.png"
+              src="./images/platydes.png"
             />
           </div>
           <div class="main-body-image-container non-toned">
             <img
               alt=""
               class="non-toned_image"
-              src="./images/Aritya_Vector_3.png"
+              src="./images/platydev.png"
             />
           </div>
         </section>
@@ -68,12 +69,12 @@
         <section class="main-body-projects">
           <div class="mb-projects_head">
             <div class="mb-projects_divider"></div>
-            <h2 class="mb-projects_title">Some Projects</h2>
+            <h2 class="mb-projects_title">Latest Contribution</h2>
             <div class="mb-projects_divider"></div>
           </div>
 
           <div class="mb-projects_container">
-            <a
+            <!-- <div
               href="https://o-shop-5kmm.onrender.com"
               target="_blank"
               style="text-decoration: none"
@@ -92,9 +93,9 @@
                   <div class="mb-projects-card_description2">Show Project</div>
                 </div>
               </div>
-            </a>
+            </div>
 
-            <a
+            <div
               href="https://react-movie-671x.onrender.com"
               target="_blank"
               style="text-decoration: none"
@@ -116,9 +117,9 @@
                   <div class="mb-projects-card_description2">Show Project</div>
                 </div>
               </div>
-            </a>
+            </div>
 
-            <a
+            <div
               href="https://b-log-8ph6.onrender.com"
               target="_blank"
               style="text-decoration: none"
@@ -135,7 +136,42 @@
                   <div class="mb-projects-card_description2">Show Project</div>
                 </div>
               </div>
-            </a>
+            </div> -->
+              <% mainProjects.forEach(project => { %>
+
+              <div
+                class="mb-project-card-wrapper"
+                data-url="<%= project.url %>"
+              >
+                <div class="mb-projects-card">
+                  <div class="mb-projects-card_imgcontainer">
+                    <img
+                      class="imgcontainer-img"
+                      src="<%= project.image %>"
+                      alt="<%= project.title %>"
+                    />
+                  </div>
+
+                  <div class="mb-projects-card_details">
+
+                    <div class="mb-projects-card_title">
+                      <%= project.title %>
+                    </div>
+
+                    <div class="mb-projects-card_description">
+                      <%= project.description %>
+                    </div>
+
+                    <div class="mb-projects-card_description2">
+                      Show Project  <i class="fa-solid fa-arrow-up-right-from-square fa-icon-resize"></i>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            <% }) %>
           </div>
         </section>
       </section>

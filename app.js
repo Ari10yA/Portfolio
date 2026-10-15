@@ -1,79 +1,76 @@
-const express = require('express');
+import express from "express";
+import sgMail from "@sendgrid/mail";
+import metaData from "./metadata.json" with { type: "json" };
+import "dotenv/config";
+
 const app = express();
-const path = require('path');
-const fs = require('fs');
-const bodyParser = require('body-parser');
 const port = process.env.PORT || 4000;
-require('dotenv').config();
 
 const API_KEY = process.env.API_KEY;
 
-
-
-const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(API_KEY);
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static('public'));
-app.set('views', 'public');
-app.set('view engine', 'ejs');
+app.use(express.static("public"));
+app.set("views", "public");
+app.set("view engine", "ejs");
 
-app.get('/', (req, res) => {
-  res.render('index', {
-    path: '/'
-  });
-});
-
-app.get('/contact', (req, res) => {
-  res.render('Contact/contact', {
-    path: '/contact'
-  });
-});
-
-app.post('/contact', (req, res, next) => {
-  const {email, name, message} = req.body;
-
-  console.log(email, name, message);
-
-  const text = `From : ${email} , I am ${name}, ${message}`
-
-  const msg = {
-    to: 'khamruiaritya.2.3.5.ak@gmail.com', // Replace with your email address
-    from: 'aritya_201900397@smit.smu.edu.in', // Replace with your SendGrid email
-    subject: 'Inquiry',
-    text: text,
-  };
-
-  sgMail.send(msg)
-    .then(() => {
-      console.log('Email sent');
-      res.redirect('/contact');
-    })
-    .catch((error) => {
-      console.error(error);
-      res.status(500).send('Error sending email');
+app.get("/", (req, res) => {
+    res.render("index", {
+        path: "/",
+        mainProjects: metaData.HomePageProjects,
     });
-})
-
-app.get('/projects', (req, res) => {
-  res.render('Projects/project', {
-    path: '/projects'
-  });
 });
 
-app.get('/experience', (req, res) => {
-  res.render('Experience/experience', {
-    path: '/experience'
-  });
+app.get("/contact", (req, res) => {
+    res.render("Contact/contact", {
+        path: "/contact",
+    });
 });
 
-app.get('/about', (req, res) => {
-  res.render('AboutMe/about', {
-    path: '/about'
-  });
+app.post("/contact", (req, res) => {
+    const { email, name, message } = req.body;
+
+    const text = `From : ${email} , I am ${name}, ${message}`;
+
+    const msg = {
+        to: "arityakhamrui.work@gmail.com", // Replace with your email address
+        from: "khamruiaritya.2.3.5.ak@gmail.com", // Replace with your SendGrid email
+        subject: "Inquiry",
+        text: text,
+    };
+
+    sgMail
+        .send(msg)
+        .then(() => {
+            res.redirect("/contact");
+        })
+        .catch((error) => {
+            console.error(error);
+            res.status(500).send("Error sending email");
+        });
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+app.get("/projects", (req, res) => {
+    res.render("Projects/project", {
+        path: "/projects",
+        projectsData: metaData.ProjectsData,
+    });
 });
+
+app.get("/experience", (req, res) => {
+    res.render("Experience/experience", {
+        path: "/experience",
+        experiences: metaData.Experiences,
+    });
+});
+
+app.get("/about", (req, res) => {
+    res.render("AboutMe/about", {
+        path: "/about",
+        skills: metaData.Skill,
+    });
+});
+
+app.listen(port, () => {});
