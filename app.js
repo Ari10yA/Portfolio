@@ -1,8 +1,11 @@
 import express from "express";
 import sgMail from "@sendgrid/mail";
-import metaData from "./metadata.json" with { type: "json" };
+import { readFileSync } from "node:fs";
 import "dotenv/config";
 
+const metaData = JSON.parse(
+    readFileSync(new URL("./metadata.json", import.meta.url), "utf8"),
+);
 const app = express();
 const port = process.env.PORT || 4000;
 
