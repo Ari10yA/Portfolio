@@ -126,6 +126,7 @@
 } */
 
 .project-btn{
+    display: inline-block;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.1rem;
     border: 3px solid rgb(37, 204, 255);
@@ -134,6 +135,7 @@
     margin: 0.5rem;
     background: rgb(37, 204, 255);
     color: white;
+    text-decoration: none;
     scale: 1;
     transition: all 0.4s ease;
     font-weight: bold;
